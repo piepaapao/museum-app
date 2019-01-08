@@ -15,8 +15,18 @@ body {
     text-align: center;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .artObject {
-    max-width: 80%;
-    max-height: 20rem;
+    display: block;
+    max-width: 300px;
     margin: 1rem;
+}
+
+.artObject.special {
+    border: 2px solid turquoise;
 }
