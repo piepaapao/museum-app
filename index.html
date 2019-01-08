@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <title>museum guide</title>
+    <title>street.art.gallery</title>
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
 </head>
 <body>
 <main>
-    <h1>Lai Mobile Museum App</h1>
+    <h1>lai.street.art.gallery</h1>
     <section id="gallery">
-        <h2>gallery</h2>
+        <h2>favourites</h2>
         <div class="gallery">
             <a href="./pages/detail-page.html">
                 <img class="artObject special" src="https://shapero.com/wp-content/uploads/2017/05/95344.jpg" alt="">
@@ -21,14 +21,23 @@
             <a href="./pages/detail-page.html">
                 <img class="artObject" src="https://shapero.com/wp-content/uploads/2017/05/95344.jpg" alt="">
             </a>
-            <a href="./pages/detail-page.html">
-                <img class="artObject" src="https://shapero.com/wp-content/uploads/2017/05/95344.jpg" alt="">
-            </a>
-            <a href="./pages/detail-page.html">
-                <img class="artObject" src="https://shapero.com/wp-content/uploads/2017/05/95344.jpg" alt="">
-            </a>
+        <form onsubmit="submitComment(); return false">
+            <div class="formSection">
+                <label for="name">name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="formSection">
+                <label for="msg">message</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="default">❤ submit ❤</button>
+            </div>
+        </form>
         </div>
     </section>
 </main>
-<footer></footer>
+<footer>
+    <p>Made with ❤ at Codaisseur</p>
+</footer>
 </body>
